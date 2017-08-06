@@ -1,5 +1,4 @@
 ## Tutorias em Python
-***
 #### Instalação
 ***
 
@@ -103,3 +102,11 @@ salvos com a extensão .ipynb. Como o JSON é um formato de texto simples, eles 
 ![math5](https://cloud.githubusercontent.com/assets/14116020/26659354/74fb7ffe-4646-11e7-90aa-f72245ca4494.png)
 
 ![math6](https://cloud.githubusercontent.com/assets/14116020/26659356/7698fc2e-4646-11e7-86f2-1b08c2dba0fb.png)
+
+***
+#### Referências
+***
+
+* **Python**: Video aulas do Udemy e do canal do Youtube (ignorância zero)
+
+* **Métodos Númericos**: https://github.com/fabiommendes/numericos-pub
