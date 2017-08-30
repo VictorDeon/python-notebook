@@ -5,7 +5,7 @@
 Para instalar o notebook jupyter primeiro devemos ter o python3 instalado e o pip3, com o pip3 instalado execute o comando:
 
 ```sh
-pip3 install jupyter
+sudo apt-get install python3-pip python3-jupyter python3-numpy python3-scipy python3-matplotlib
 ```
 
 * Se precisar use o sudo na frente
