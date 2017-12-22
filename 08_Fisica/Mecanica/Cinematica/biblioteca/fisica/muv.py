@@ -33,7 +33,7 @@ class MUV(object):
         elif operacao == 5:
             resultado = self.torricelli(kwargs)
         else:
-            print("Operação invalida!")
+            raise NameError(self.ERROR)
 
         return resultado
 
