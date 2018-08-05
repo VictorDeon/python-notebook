@@ -1,4 +1,9 @@
 ## Tutorias em Python
+***
+
+Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins lucrativos, foi retirado de N fontes da internet incluindo video aulas do Youtube até conteúdo de cursos realizados e livros.
+
+***
 #### Instalação
 ***
 
