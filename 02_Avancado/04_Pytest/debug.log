@@ -1,10 +1,3 @@
-18/07/2017 at 07:49:07 PM - __main__ - <ipython-input-3-abd97e265b1c>.<module> in 2 - INFO: Mensagem informativa: Oiiii
-18/07/2017 at 07:49:08 PM - __main__ - <ipython-input-4-158f0600e7bf>.<module> in 1 - DEBUG: Mensagem importante
-18/07/2017 at 07:49:09 PM - __main__ - <ipython-input-5-6e2eb96e33b8>.<module> in 1 - DEBUG: Mensagem de debug
-18/07/2017 at 07:49:10 PM - __main__ - <ipython-input-6-e1f9ffe859f5>.<module> in 1 - ERROR: Algum erro aconteceu
-18/07/2017 at 07:49:12 PM - __main__ - <ipython-input-7-428e4b6d6d1d>.<module> in 1 - CRITICAL: Algum erro grave aconteceu
-18/07/2017 at 07:49:12 PM - __main__ - <ipython-input-8-b335d572acfc>.<module> in 4 - ERROR: Exception
-Traceback (most recent call last):
-  File "<ipython-input-8-b335d572acfc>", line 2, in <module>
-    open('file.txt', 'rb')
-FileNotFoundError: [Errno 2] No such file or directory: 'file.txt'
+02/12/2018 at 04:24:20 PM - __main__ - <ipython-input-3-4d51e5dc93e9>.<module> in 2 - INFO: Mensagem informativa: Oiiii
+02/12/2018 at 04:24:21 PM - __main__ - <ipython-input-4-561e5e6cba1f>.<module> in 1 - DEBUG: Mensagem importante
+02/12/2018 at 04:24:22 PM - __main__ - <ipython-input-5-c4cc73e6a179>.<module> in 1 - DEBUG: Mensagem de debug
