@@ -10,10 +10,8 @@ Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins 
 Para instalar o notebook jupyter primeiro devemos ter o python3 instalado e o pip3, com o pip3 instalado execute o comando:
 
 ```sh
-sudo apt-get install python3-pip python3-jupyter python3-numpy python3-scipy python3-matplotlib
+python3 -m pip install jupyter
 ```
-
-* Se precisar use o sudo na frente
 
 * **Referências**:
 
@@ -115,3 +113,5 @@ salvos com a extensão .ipynb. Como o JSON é um formato de texto simples, eles 
 * **Python**: Video aulas do Udemy e do canal do Youtube (ignorância zero)
 
 * **Métodos Númericos**: https://github.com/fabiommendes/numericos-pub
+
+* **Udemy**: Cursos feitos no Udemy
