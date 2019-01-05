@@ -1,4 +1,5 @@
-from base import base
+from base import base, stopwords
+from base_completa import base_treinamento, base_teste
 import nltk
 
 
@@ -37,7 +38,8 @@ def aplicar_stemming(texto):
     return frases
 
 
-stemming = aplicar_stemming(base)
+stemming_treinamento = aplicar_stemming(base_treinamento)
+stemming_teste = aplicar_stemming(base_teste)
 
 
 def busca_palavras():
@@ -47,7 +49,7 @@ def busca_palavras():
     
     so_palavras = []
     
-    for (palavras, emocao) in stemming:
+    for (palavras, emocao) in stemming_treinamento:
         # extend: Pega os elementos da lista e joga 1 por 1 dentro da outra lista
         so_palavras.extend(palavras)
         
@@ -79,4 +81,5 @@ def inseri_tabela(novas_palavras):
     return linha_tabela
         
     
-base_completa = nltk.classify.apply_features(inseri_tabela, stemming)
+base_completa_treinamento = nltk.classify.apply_features(inseri_tabela, stemming_treinamento)
+base_completa_teste = nltk.classify.apply_features(inseri_tabela, stemming_teste)
