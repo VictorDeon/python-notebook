@@ -28,4 +28,5 @@ src/ejudge_server/__meta__.py
 # Testing and temporary files
 .tox/
 
-08_Inteligencia_Artificial/03_Deteccao_de_Objetos/positivas
+08_Inteligencia_Artificial/02_Algoritmos_Especificos/03_Deteccao_de_Objetos/positivas
+09_Inteligencia_Artificial/03_Deep_Learning/02_Redes_Neurais_Convolucionais/dataset
