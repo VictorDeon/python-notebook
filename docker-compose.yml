@@ -1,0 +1,9 @@
+version: '3'
+services:
+  notebook:
+    image: jupyter/minimal-notebook
+    container_name: notebook
+    volumes:
+      - .:/home/jovyan
+    ports:
+      - "8000:8888"

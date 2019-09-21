@@ -13,6 +13,10 @@ __pycache__/
 .ropeproject/
 .cache/
 .coverage
+.cache
+.ipython
+.local
+.bash_history
 
 # Build directories
 docs/_build/
