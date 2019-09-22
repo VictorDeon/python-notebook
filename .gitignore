@@ -17,6 +17,7 @@ __pycache__/
 .ipython
 .local
 .bash_history
+.jupyter
 
 # Build directories
 docs/_build/

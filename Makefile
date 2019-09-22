@@ -19,4 +19,3 @@ remove:
 	# Remove um pacote existente
 	docker-compose exec notebook pip uninstall ${package}
 	docker-compose exec notebook pip freeze > requirements.txt
-
