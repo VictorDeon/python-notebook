@@ -1,7 +1,7 @@
 version: '3'
 services:
   notebook:
-    image: vwapp/notebook:latest
+    image: victorhad/notebook:latest
     container_name: notebook
     build: .
     volumes:
