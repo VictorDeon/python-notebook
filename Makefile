@@ -19,3 +19,8 @@ remove:
 	# Remove um pacote existente
 	docker-compose exec notebook pip uninstall ${package}
 	docker-compose exec notebook pip freeze > requirements.txt
+
+convert:
+	# Converte um arquivo.ipynb para html
+	# html, pdf, markdown
+	ipython nbconvert --to html ${file} --output-dir=htmls

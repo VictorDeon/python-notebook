@@ -23,6 +23,7 @@ __pycache__/
 docs/_build/
 build/
 dist/
+htmls
 
 # Python-boilerplate auto generated files
 src/ejudge_server/__meta__.py

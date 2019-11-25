@@ -1,10 +1,18 @@
 version: '3'
 services:
   notebook:
-    image: victorhad/notebook:latest
+    image: jupyter/minimal-notebook
     container_name: notebook
-    build: .
     volumes:
       - .:/home/jovyan
     ports:
       - "8888:8888"
+
+  python_notebook:
+    image: victorhad/notebook
+    container_name: python_notebook
+    build: .
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+    ports:
+      - "8080:80"
