@@ -1,12 +1,12 @@
 version: '3'
 services:
-  notebook:
-    image: jupyter/minimal-notebook
-    container_name: notebook
-    volumes:
-      - .:/home/jovyan
-    ports:
-      - "8888:8888"
+  # notebook:
+  #   image: jupyter/minimal-notebook
+  #   container_name: notebook
+  #   volumes:
+  #     - .:/home/jovyan
+  #   ports:
+  #     - "8888:8888"
 
   python_notebook:
     image: victorhad/notebook
