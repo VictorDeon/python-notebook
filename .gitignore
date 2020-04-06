@@ -43,6 +43,15 @@ nltk_data
 sqlite.db
 psql.dump
 clientes_dump.sql
+debug.log
+02_Avancado/03_Iteracoes/arquivo.txt
+arquivo.pck
+binary.cod
+contatos.db
+governo.json
+shelve.db
+tabela.csv
+graphic.png
 
 # Arquivos
 08_Inteligencia_Artificial/02_Algoritmos_Especificos/03_Deteccao_de_Objetos/positivas
