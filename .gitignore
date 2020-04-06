@@ -19,6 +19,8 @@ __pycache__/
 .bash_history
 .jupyter
 .env
+.pki
+.wdm
 
 # Build directories
 docs/_build/

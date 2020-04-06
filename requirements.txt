@@ -35,8 +35,6 @@ selenium==3.141.0
 webdriver-manager==2.3.0
 # PDF
 slate3k==0.5.3
-tabula-py==2.1.0
-PyPDF2==1.26.0
 # Planilhas
 openpyxl==3.0.3
 # Async
