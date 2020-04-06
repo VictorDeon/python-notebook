@@ -35,9 +35,14 @@ src/ejudge_server/__meta__.py
 
 # Testing and temporary files
 .tox/
+
+# Outros arquivos e pastas gerados
 .env
 nltk_data
 .config
+sqlite.db
+psql.dump
+clientes_dump.sql
 
 # Arquivos
 08_Inteligencia_Artificial/02_Algoritmos_Especificos/03_Deteccao_de_Objetos/positivas
