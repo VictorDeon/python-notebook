@@ -10,6 +10,7 @@ services:
       - .:/home/jovyan
     ports:
       - "8888:8888"
+      - "8080:8080"
     shm_size: '2gb'
     networks:
       - notebook-network
