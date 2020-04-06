@@ -10,7 +10,8 @@ def text(text):
     print(text)
     
 def sum(x, y):
-    return x + y
+    print(int(x) + int(y))
+    return int(x) + int(y)
     
 def pipe():
     n = sys.stdin.read()
