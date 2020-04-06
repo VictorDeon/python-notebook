@@ -32,9 +32,11 @@ src/ejudge_server/__meta__.py
 
 # IDEs
 .idea/
+.DS_Store
 
 # Testing and temporary files
 .tox/
+.keras
 
 # Outros arquivos e pastas gerados
 .env
@@ -63,7 +65,3 @@ requests_img.jpg
 06_Modulos/Outros/recursos/qrcode.png
 06_Modulos/Outros/recursos/teste.xlsx
 06_Modulos/Outros/recursos/teste.zip
-
-# Arquivos
-08_Inteligencia_Artificial/02_Algoritmos_Especificos/03_Deteccao_de_Objetos/positivas
-08_Inteligencia_Artificial/03_Deep_Learning/02_Redes_Neurais_Convolucionais/dataset
