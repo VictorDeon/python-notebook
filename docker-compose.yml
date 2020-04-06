@@ -2,13 +2,18 @@ version: '3'
 services:
   notebook:
     image: victorhad/notebook
-    build: .
     container_name: notebook
+    build: .
     env_file:
       - .env
     volumes:
       - .:/home/jovyan
     ports:
       - "8888:8888"
-      - "5000:5000"
     shm_size: '2gb'
+    networks:
+      - notebook-network
+
+networks:
+  notebook-network:
+    driver: bridge

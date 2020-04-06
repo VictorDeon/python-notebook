@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-notebook
+    restart: "no"
+    environment:
+      - POSTGRES_DB=notebook_db
+      - POSTGRES_USER=note
+      - POSTGRES_PASSWORD=note
+    networks:
+      - notebook-network

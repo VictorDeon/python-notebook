@@ -7,9 +7,7 @@ USER root
 # Instalando outras dependências
 RUN apt-get update && apt-get install -y \
     curl unzip gnupg2 \
-    mysql-server \
     sqlite3 \
-    postgresql postgresql-contrib \
     python-opencv \
     libopencv-dev
 

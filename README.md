@@ -4,6 +4,19 @@
 Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins lucrativos, foi retirado de N fontes da internet incluindo video aulas do Youtube até conteúdo de cursos realizados e livros.
 
 ***
+#### Não funciona no docker (arrumar)
+***
+
+* 02_Avancado/02_Armazenamento_de_dados/02_dbm.ipynb
+* 02_Avancado/02_Armazenamento_de_dados/05_shelve.ipynb
+* 02_Avancado/05_Ferraments_de_sistema/Revisar todos.
+* 02_Avancado/06_Execucao_paralela/Melhorar os exemplos (deixar mais didático).
+* 02_Avancado/07_Internet/Revisar todos.
+* 06_Modulos/03_Requests/Revisar (trocar endpoints quebrados)
+* 06_Modulos/04_Requests/Revisar (scraping de páginas mais estável)
+* 07_Banco_de_Dados/Só o sqlite funciona no docker. (inserir no docker-compose os bancos de dados - servidor)
+
+***
 #### Instalação
 ***
 

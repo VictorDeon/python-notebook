@@ -1,0 +1,14 @@
+.cache
+.config
+.ipython
+.jupyter
+.local
+.pki
+.wdm
+.bash_history
+.env
+.git
+.gitattributes
+.gitignore
+nltk_data
+composes
