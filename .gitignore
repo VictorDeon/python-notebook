@@ -18,6 +18,7 @@ __pycache__/
 .local
 .bash_history
 .jupyter
+.env
 
 # Build directories
 docs/_build/
