@@ -4,7 +4,17 @@
 Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins lucrativos, foi retirado de N fontes da internet incluindo video aulas do Youtube até conteúdo de cursos realizados e livros.
 
 ***
-#### Instalação
+#### Docker
+***
+
+Se não quiser instalar manualmente tudo, pode-se usar o docker.
+
+```
+docker-compose up --build
+```
+
+***
+#### Instalação Manual
 ***
 
 Para instalar o notebook jupyter primeiro devemos ter o python3 instalado e o pip3, com o pip3 instalado execute o comando:
@@ -115,3 +125,5 @@ salvos com a extensão .ipynb. Como o JSON é um formato de texto simples, eles 
 * **Métodos Númericos**: https://github.com/fabiommendes/numericos-pub
 
 * **Udemy**: Cursos feitos no Udemy
+
+* **Bibliotecas Python**: Bibliotecas python de terceiros.
