@@ -1,8 +1,12 @@
+<!doctype html>
 <html>
   <head>
     <title>CGI - HTML</title>
   </head>
   <body>
     <h1>Ola mundo HTML</h1>
+    {% if context %}
+      <p>Contexto: {{ context }}</p>
+    {% endif %}
   </body>
 </html>

@@ -11,7 +11,7 @@ import os, sys
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
 # Diretório utilizado para manter arquivos HTML e scripts CGI
-diretorio = './html'
+diretorio = './templates'
 
 # Número de port, http://servername/ se 80,
 # senão use http://servername:xxxx/

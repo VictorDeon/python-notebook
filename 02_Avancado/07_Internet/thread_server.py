@@ -1,3 +1,7 @@
+"""
+O lado do servidor abre um TCP/IP em uma porta, espera por uma mensagem de um cliente, e manda essa mensagem de volta como resposta. Usamos aqui a biblioteca socketserver para realizar este trabalho. Esta biblioteca fornece TCPServer, THreadingTCPServer e ForkingTCPServer, UDP e variações destes, entre outras coisas, e redireciona cada cliente para um request handler para utilizar se do método handle para lidar com o requisito do cliente.
+"""
+
 # Importa os modulos
 from socketserver import BaseRequestHandler, ThreadingTCPServer
 import time
