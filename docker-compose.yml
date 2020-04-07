@@ -8,6 +8,9 @@ services:
       - .env
     volumes:
       - .:/home/jovyan
+    # Só funciona no linux (liberar webcam)
+    # devices:
+    #   - /dev/video0:/dev/video0
     ports:
       - "8888:8888"
       - "8080:8080"
