@@ -35,11 +35,16 @@ python3 -m pip install jupyter
     jupyter notebook
     ```
 
-* Roda qualquer comando no python pelo terminal:
+* Adicionar algumas dependências usadas no projeto:
 
     ```sh
-    pip3 install ipython
-    python3
+    sudo apt-get update && apt-get install -y \
+        curl unzip gnupg2 \
+        sqlite3 \
+        python-opencv \
+        libopencv-dev
+ 
+    pip3 install -r requirements.txt
     ```
 
 ***
