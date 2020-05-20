@@ -4,7 +4,7 @@ pytest-cov==2.8.1
 # SSH
 paramiko==2.7.1
 # Requests
-httplib2==0.17.1
+httplib2==0.18.0
 requests==2.23.0
 # WebSocket
 Flask-SocketIO==4.2.1
