@@ -4,8 +4,73 @@
 <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Guia Markdown</a>
 
 ***
+### Inserir vídeos do youtube
+***
+
+1. Vai na página do youtube do vídeo que você gostaria de inserir.
+
+2. Clique em "Compartilhar" e logo em seguida em "Incorporar"
+
+3. Copie o código que ele irá disponibilizar, modificando o width para 100% e o height para 500. Ex:
+
+```
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/3sCGysVB41k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+
+4. Cole no editor markdown do vwapp e salve.
+
+***
+### Inserir imagens
+***
+
+1. Clique no icone de imagem, ele irá te redirecionar para o local onde será armazenado a imagem.
+
+  ![1](https://user-images.githubusercontent.com/14116020/93728857-46399100-fb98-11ea-8868-6cdaabd0b327.png)
+
+2. Pegue a imagem do seu computador e jogue no editor de texto abaixo OU clique com o botão direito do mouse na imagem e clique em Copiar Imagem e cole no editor abaixo.
+
+![1](https://user-images.githubusercontent.com/14116020/93728877-5b162480-fb98-11ea-8141-7b0f76ef76cf.png)
+
+3. Espere o editor fazer o upload e pegue o código e cole na wiki.
+
+***
+### Drawio
+***
+
+1. Crie o arquivo drawio no seu google driver.
+
+2. Ao criar vai em "file > Embed" > Iframe
+
+  ![1](https://user-images.githubusercontent.com/14116020/93729070-33738c00-fb99-11ea-8302-2e26518378d2.png)
+
+3. Troque "make a copy" por "custom"
+
+4. Copie e cole o código disponibilizado no editor do vwapp
+
+  ![1](https://user-images.githubusercontent.com/14116020/93729094-5b62ef80-fb99-11ea-873c-9a2e5c7e6a08.png)
+
+***
+### Códigos
+***
+
+Linguagens disponíveis: https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md
+
+No editor insira o html abaixo:
+
+<pre id="python">
+def my_method():
+  """
+  Bote seu código dentro das tags <pre>AQUI!</pre>
+  """
+  
+  pass
+</pre>
+
+***
 #### Simbolos matematicos ($$)
 ***
+
+Para gerar fórmulas inline use $...$ e para gerar formulas centralizada e em bloco use $$...$$
 
 ![math1](https://cloud.githubusercontent.com/assets/14116020/26659341/62d9d082-4646-11e7-9c9e-19c352112968.png)
 
