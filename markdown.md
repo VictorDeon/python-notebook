@@ -59,6 +59,7 @@ Linguagens disponíveis: https://github.com/highlightjs/highlight.js/blob/master
 
 No editor da wiki insira o html abaixo e salve:
 
+```
 <pre id="python">
 def my_method():
   """
@@ -67,6 +68,7 @@ def my_method():
   
   pass
 </pre>
+```
 
 ***
 #### Simbolos matematicos ($$)
