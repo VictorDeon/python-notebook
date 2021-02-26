@@ -12,7 +12,7 @@ python-socketio==4.5.1
 python-engineio==3.12.1
 websocket-client==0.57.0
 async-timeout==3.0.1
-aiohttp==3.6.2
+aiohttp==3.7.4
 multidict==4.7.5
 yarl==1.4.2
 websockets==8.1
