@@ -23,7 +23,7 @@ numpy==1.18.2
 matplotlib==3.2.1
 # WebScraping
 beautifulsoup4==4.9.0
-lxml==4.5.0
+lxml==4.6.5
 html5lib==1.0.1
 selenium==3.141.0
 webdriver-manager==2.3.0
