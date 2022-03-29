@@ -2,7 +2,7 @@
 pytest==5.4.1
 pytest-cov==2.8.1
 # SSH
-paramiko==2.7.1
+paramiko==2.10.1
 # Requests
 httplib2==0.17.1
 requests==2.23.0
