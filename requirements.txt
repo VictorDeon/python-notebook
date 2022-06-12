@@ -1,47 +1,7 @@
 # Testes
 pytest==5.4.1
 pytest-cov==2.8.1
-# SSH
-paramiko==2.7.1
-# Requests
-httplib2==0.17.1
-requests==2.23.0
-# WebSocket
-Flask-SocketIO==4.2.1
-python-socketio==4.5.1
-python-engineio==3.12.1
-websocket-client==0.57.0
-async-timeout==3.0.1
-aiohttp==3.6.2
-multidict==4.7.5
-yarl==1.4.2
-websockets==8.1
-# Framework
-Flask==1.1.2
-# Data Science
-numpy==1.18.2
-matplotlib==3.2.1
-# WebScraping
-beautifulsoup4==4.9.0
-lxml==4.5.0
-html5lib==1.0.1
-selenium==3.141.0
-webdriver-manager==2.3.0
-# PDF
-slate3k==0.5.3
-# Planilhas
-openpyxl==3.0.3
-# Async
-schedule==0.6.0
-# Outros modulos
-googletrans==2.4.0
-qrcode==6.1
-PyJWT==1.7.1
 # Banco de dados
 mysql-connector==2.2.9
 psycopg2-binary==2.8.4
 pymongo==3.10.1
-# Imagens
-Pillow==7.1.1
-imutils==0.5.3
-opencv-python==4.2.0.34
