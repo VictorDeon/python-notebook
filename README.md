@@ -23,29 +23,42 @@ Para instalar o notebook jupyter primeiro devemos ter o python3 instalado e o pi
 python3 -m pip install jupyter
 ```
 
+Adicionar algumas dependências usadas no projeto:
+
+```sh
+sudo apt-get update && apt-get install -y sqlite3
+```
+
+Criar e entrar no ambiente virtual python
+
+```sh
+python3 -m venv notebook
+source notebook/bin/activate
+```
+
+Instala as dependencias
+
+```sh
+pip3 install -r requirements.txt
+```
+
+Com o jupyter instalado rode ele na pasta que você desejar:
+
+```sh
+jupyter notebook
+```
+
+Sair do ambiente virtual
+
+```sh
+deactivate
+```
+
 * **Referências**:
 
     - [Jupyter](http://jupyter.org/)
     - [Como funciona o jupyter notebook](https://www.youtube.com/watch?v=xuahp9g3Dic)
     - [Documentação](http://jupyter-notebook.readthedocs.io/en/latest/)
-
-* Com o jupyter instalado rode ele na pasta que você desejar:
-
-    ```sh
-    jupyter notebook
-    ```
-
-* Adicionar algumas dependências usadas no projeto:
-
-    ```sh
-    sudo apt-get update && apt-get install -y \
-        curl unzip gnupg2 \
-        sqlite3 \
-        python-opencv \
-        libopencv-dev
- 
-    pip3 install -r requirements.txt
-    ```
 
 ***
 #### O que é o notebook jupyter

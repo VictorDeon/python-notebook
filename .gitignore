@@ -43,3 +43,4 @@ src/ejudge_server/__meta__.py
 .env
 nltk_data
 .config
+notebook
