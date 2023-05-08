@@ -4,36 +4,27 @@
 Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins lucrativos, foi retirado de N fontes da internet incluindo video aulas do Youtube até conteúdo de cursos realizados e livros.
 
 ***
-#### Docker
-***
-
-Se não quiser instalar manualmente tudo, pode-se usar o docker.
-
-```
-docker-compose up --build
-```
-
-***
 #### Instalação Manual
 ***
 
-Para instalar o notebook jupyter primeiro devemos ter o python3 instalado e o pip3, com o pip3 instalado execute o comando:
+Instale o python3, pip3 e virtualenv
 
 ```sh
-python3 -m pip install jupyter
+sudo apt-get install python3-pip
+sudo pip3 install virtualenv
 ```
 
-Adicionar algumas dependências usadas no projeto:
+Instale o [jupyterlab](https://jupyter.org/install)
 
 ```sh
-sudo apt-get update && apt-get install -y sqlite3
+sudo pip3 install jupyterlab
 ```
 
 Criar e entrar no ambiente virtual python
 
 ```sh
-python3 -m venv notebook
-source notebook/bin/activate
+virtualenv venv
+source venv/bin/activate
 ```
 
 Instala as dependencias
@@ -42,10 +33,10 @@ Instala as dependencias
 pip3 install -r requirements.txt
 ```
 
-Com o jupyter instalado rode ele na pasta que você desejar:
+Com o jupyter lab instalado rode ele na pasta que você desejar:
 
 ```sh
-jupyter notebook
+jupyter-lab
 ```
 
 Sair do ambiente virtual

@@ -1,0 +1,39 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:4.0.8
+    container_name: notebook-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: notebook
+      MONGO_INITDB_ROOT_PASSWORD: notebook
+      MONGO_INITDB_DATABASE: health-check
+      MONGODB_DATA_DIR: /data/db
+      MONDODB_LOG_DIR: /dev/null
+    volumes:
+      - .ignore/mongodbdata:/data/db
+
+  mongo-express:
+    image: mongo-express
+    container_name: notebook-mongodb-express
+    restart: unless-stopped
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_OPTIONS_EDITORTHEME: dracula
+      ME_CONFIG_MONGODB_URL: mongodb://notebook:notebook@mongodb:27017/
+    depends_on:
+      - mongodb
+
+  notebook:
+    image: notebook:latest
+    build: .
+    container_name: notebook
+    volumes:
+      - .:/home/jovyan/work
+    ports:
+      - "8888:8888"
+    environment:
+        JUPYTER_ENABLE_LAB: yes
+    depends_on:
+      - mongodb

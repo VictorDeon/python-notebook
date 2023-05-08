@@ -44,3 +44,4 @@ src/ejudge_server/__meta__.py
 nltk_data
 .config
 notebook
+.ignore
