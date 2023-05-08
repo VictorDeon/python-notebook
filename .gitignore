@@ -45,3 +45,4 @@ nltk_data
 .config
 notebook
 .ignore
+venv

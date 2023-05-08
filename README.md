@@ -7,43 +7,20 @@ Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins 
 #### Instalação Manual
 ***
 
-Instale o python3, pip3 e virtualenv
+Instale o docker e o docker compose, com isso execute o comando
 
 ```sh
-sudo apt-get install python3-pip
-sudo pip3 install virtualenv
+docker compose up
 ```
 
-Instale o [jupyterlab](https://jupyter.org/install)
+***
+#### TODO
+***
 
-```sh
-sudo pip3 install jupyterlab
-```
-
-Criar e entrar no ambiente virtual python
-
-```sh
-virtualenv venv
-source venv/bin/activate
-```
-
-Instala as dependencias
-
-```sh
-pip3 install -r requirements.txt
-```
-
-Com o jupyter lab instalado rode ele na pasta que você desejar:
-
-```sh
-jupyter-lab
-```
-
-Sair do ambiente virtual
-
-```sh
-deactivate
-```
+* Arrumar o notebook do postgres
+* Inserir o mysql no docker compose
+* Arrumar os codigos de todos os banco de dados menos do sqlite
+* Inserir codigo de async await baseado neste tutorial: https://realpython.com/async-io-python/
 
 * **Referências**:
 
