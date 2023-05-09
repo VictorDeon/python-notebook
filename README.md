@@ -17,14 +17,7 @@ docker compose up
 #### TODO
 ***
 
-* Arrumar o notebook do postgres
 * Inserir codigo de async await baseado neste tutorial: https://realpython.com/async-io-python/
-
-* **Referências**:
-
-    - [Jupyter](http://jupyter.org/)
-    - [Como funciona o jupyter notebook](https://www.youtube.com/watch?v=xuahp9g3Dic)
-    - [Documentação](http://jupyter-notebook.readthedocs.io/en/latest/)
 
 ***
 #### O que é o notebook jupyter
