@@ -5,6 +5,5 @@ pytest==5.4.1
 pytest-cov==2.8.1
 # Banco de dados
 mysql-connector==2.2.9
-# psycopg2==2.8.6
-# psycopg2-binary==2.8.6
+psycopg2-binary==2.9.6
 pymongo==3.10.1

@@ -18,8 +18,6 @@ docker compose up
 ***
 
 * Arrumar o notebook do postgres
-* Inserir o mysql no docker compose
-* Arrumar os codigos de todos os banco de dados menos do sqlite
 * Inserir codigo de async await baseado neste tutorial: https://realpython.com/async-io-python/
 
 * **Referências**:
