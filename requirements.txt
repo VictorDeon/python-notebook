@@ -1,5 +1,7 @@
 # Jupyter lab
 jupyterlab==3.6.3
+# Outras
+aiohttp==3.8.4
 # Testes
 pytest==5.4.1
 pytest-cov==2.8.1
