@@ -42,7 +42,7 @@ services:
     image: dpage/pgadmin4
     container_name: notebook_pgadmin
     ports:
-      - "5433:80"
+      - "8082:80"
     environment:
       - PGADMIN_DEFAULT_EMAIL=notebook@notebook.com
       - PGADMIN_DEFAULT_PASSWORD=notebook
@@ -62,13 +62,34 @@ services:
     image: phpmyadmin/phpmyadmin
     container_name: notebook_mysqladmin
     ports:
-      - "8001:80"
+      - "8083:80"
     environment:
       - PMA_ARBITRARY=1
     volumes:
       - .ignore/mysqladmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
     depends_on:
       - mysql
+
+  redis:
+    image: redis/redis-stack-server:latest
+    container_name: notebook_redis
+    # Save after 1hr if 1 write, after 5min if 100 writes, after 60 sec if 10000 writes
+    environment:
+      - REDIS_ARGS=--save 3600 1 --save 300 100 --save 60 10000
+    ports:
+      - 6379:6379
+    volumes:
+      - .ignore/redis:/data
+
+  redis-ui:
+    image: rediscommander/redis-commander:latest
+    container_name: notebook_redis_ui
+    ports:
+      - 8084:8081
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    depends_on:
+      - redis
 
   notebook:
     image: notebook:latest
@@ -84,3 +105,4 @@ services:
       - mongodb
       - postgres
       - mysql
+      - redis
