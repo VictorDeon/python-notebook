@@ -18,6 +18,7 @@ docker compose up
 ***
 
 * Inserir codigo de async await baseado neste tutorial: https://realpython.com/async-io-python/
+* No pasta de Internet fazer tutorial de WSGI com gunicorn e ASGI com uvicorn e comparar velocidades
 
 ***
 #### O que é o notebook jupyter
