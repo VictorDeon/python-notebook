@@ -19,6 +19,7 @@ docker compose up
 
 * Inserir codigo de async await baseado neste tutorial: https://realpython.com/async-io-python/
 * No pasta de Internet fazer tutorial de WSGI com gunicorn e ASGI com uvicorn e comparar velocidades
+* Inserir um notebook com o uso da ORM tortoise para banco de dados async
 
 ***
 #### O que é o notebook jupyter
