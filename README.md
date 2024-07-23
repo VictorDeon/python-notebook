@@ -10,7 +10,7 @@ Todo conteúdo aqui inserido é para fins de estudo e consulta, não tendo fins 
 Instale o docker e o docker compose, com isso execute o comando
 
 ```sh
-docker compose up
+docker compose --profile notebook up
 ```
 
 ***

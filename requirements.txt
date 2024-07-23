@@ -6,6 +6,8 @@ httpx==0.24.0
 # Testes
 pytest==5.4.1
 pytest-cov==2.8.1
+# Performace
+memory-profiler==0.61.0
 # Banco de dados
 mysql-connector==2.2.9
 psycopg2-binary==2.9.6

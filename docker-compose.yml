@@ -3,6 +3,8 @@ services:
   mongodb:
     image: mongo:4.0.8
     container_name: notebook-mongodb
+    profiles:
+      - db
     restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: notebook
@@ -17,6 +19,8 @@ services:
     image: mongo-express
     container_name: notebook-mongodb-express
     restart: unless-stopped
+    profiles:
+      - db
     ports:
       - 8081:8081
     environment:
@@ -28,6 +32,8 @@ services:
   postgres:
     image: postgres
     container_name: notebook-postgres
+    profiles:
+      - db
     volumes:
       - .ignore/postgres:/var/lib/postgresql/data
       - .ignore/backup:/backup
@@ -41,6 +47,8 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     container_name: notebook_pgadmin
+    profiles:
+      - db
     ports:
       - "8082:80"
     environment:
@@ -52,6 +60,8 @@ services:
   mysql:
     image: mysql:5.6
     restart: always
+    profiles:
+      - db
     container_name: notebook_mysql
     environment:
       - MYSQL_ROOT_PASSWORD=notebook
@@ -61,6 +71,8 @@ services:
   mysqladmin:
     image: phpmyadmin/phpmyadmin
     container_name: notebook_mysqladmin
+    profiles:
+      - db
     ports:
       - "8083:80"
     environment:
@@ -73,6 +85,8 @@ services:
   redis:
     image: redis/redis-stack-server:latest
     container_name: notebook_redis
+    profiles:
+      - db
     # Save after 1hr if 1 write, after 5min if 100 writes, after 60 sec if 10000 writes
     environment:
       - REDIS_ARGS=--save 3600 1 --save 300 100 --save 60 10000
@@ -84,6 +98,8 @@ services:
   redis-ui:
     image: rediscommander/redis-commander:latest
     container_name: notebook_redis_ui
+    profiles:
+      - db
     ports:
       - 8084:8081
     environment:
@@ -95,6 +111,8 @@ services:
     image: notebook:latest
     build: .
     container_name: notebook
+    profiles:
+      - notebook
     volumes:
       - .:/home/jovyan/work
     ports:
