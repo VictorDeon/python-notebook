@@ -5,6 +5,7 @@ services:
     container_name: notebook-mongodb
     profiles:
       - db
+      - mongodb
     restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: notebook
@@ -13,7 +14,9 @@ services:
       MONGODB_DATA_DIR: /data/db
       MONDODB_LOG_DIR: /dev/null
     volumes:
-      - .ignore/mongodbdata:/data/db
+      - mongo_data:/data/db
+    networks:
+      - notebook
 
   mongo-express:
     image: mongo-express
@@ -21,6 +24,7 @@ services:
     restart: unless-stopped
     profiles:
       - db
+      - mongodb
     ports:
       - 8081:8081
     environment:
@@ -28,84 +32,106 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://notebook:notebook@mongodb:27017/
     depends_on:
       - mongodb
+    networks:
+      - notebook
 
   postgres:
-    image: postgres
+    image: postgres:15
     container_name: notebook-postgres
     profiles:
       - db
+      - postgres
     volumes:
-      - .ignore/postgres:/var/lib/postgresql/data
-      - .ignore/backup:/backup
+      - postgres_data:/var/lib/postgresql/data
+      - postgres_backup:/backup
     environment:
       - POSTGRES_DB=notebook
       - POSTGRES_USER=notebook
       - POSTGRES_PASSWORD=notebook
     ports:
       - "5434:5432"
+    networks:
+      - notebook
 
   pgadmin:
     image: dpage/pgadmin4
     container_name: notebook_pgadmin
     profiles:
       - db
+      - postgres
     ports:
       - "8082:80"
     environment:
       - PGADMIN_DEFAULT_EMAIL=notebook@notebook.com
       - PGADMIN_DEFAULT_PASSWORD=notebook
+    volumes:
+      - postgres_admin:/var/lib/pgadmin
     depends_on:
       - postgres
+    networks:
+      - notebook
 
   mysql:
     image: mysql:5.6
     restart: always
     profiles:
       - db
+      - mysql
     container_name: notebook_mysql
     environment:
       - MYSQL_ROOT_PASSWORD=notebook
     volumes:
-      - .ignore/mysql:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
+    networks:
+      - notebook
 
   mysqladmin:
     image: phpmyadmin/phpmyadmin
     container_name: notebook_mysqladmin
     profiles:
       - db
+      - mysql
     ports:
       - "8083:80"
     environment:
       - PMA_ARBITRARY=1
     volumes:
-      - .ignore/mysqladmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+      - mysql_admin:/etc/phpmyadmin
     depends_on:
       - mysql
+    networks:
+      - notebook
 
   redis:
     image: redis/redis-stack-server:latest
     container_name: notebook_redis
     profiles:
       - db
+      - cache
     # Save after 1hr if 1 write, after 5min if 100 writes, after 60 sec if 10000 writes
     environment:
       - REDIS_ARGS=--save 3600 1 --save 300 100 --save 60 10000
     ports:
       - 6379:6379
     volumes:
-      - .ignore/redis:/data
+      - redis_data:/data
+    networks:
+      - notebook
 
   redis-ui:
     image: rediscommander/redis-commander:latest
     container_name: notebook_redis_ui
     profiles:
       - db
+      - cache
     ports:
       - 8084:8081
     environment:
       - REDIS_HOSTS=local:redis:6379
     depends_on:
       - redis
+    networks:
+      - notebook
 
   notebook:
     image: notebook:latest
@@ -119,8 +145,26 @@ services:
       - "8888:8888"
     environment:
         JUPYTER_ENABLE_LAB: yes
-    depends_on:
-      - mongodb
-      - postgres
-      - mysql
-      - redis
+    networks:
+      - notebook
+
+networks:
+  notebook:
+    external: true
+
+volumes:
+  mongo_data:
+    external: true
+  postgres_data:
+    external: true
+  postgres_backup:
+    external: true
+  postgres_admin:
+    external: true
+  mysql_data:
+    external: true
+  mysql_admin:
+    external: true
+  redis_data:
+    external: true
+  

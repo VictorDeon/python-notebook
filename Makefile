@@ -1,10 +1,10 @@
 install:
 	# Instala uma nova dependência
-	docker compose exec notebook pip3 install ${package}
+	docker compose exec notebook pip3 install ${pkg}
 
 remove:
 	# Remove um pacote
-	docker compose exec notebook pip3 uninstall ${package}
+	docker compose exec notebook pip3 uninstall ${pkg}
 
 requirements:
 	# Verifica todas as dependências
