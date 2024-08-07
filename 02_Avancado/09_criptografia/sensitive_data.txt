@@ -1,0 +1,1 @@
+Arquivo com dados sensíveis que precisam ser criptografados

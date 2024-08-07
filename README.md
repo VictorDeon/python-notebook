@@ -19,7 +19,8 @@ docker compose --profile notebook up
 
 * Inserir codigo de async await baseado neste tutorial: https://realpython.com/async-io-python/
 * No pasta de Internet fazer tutorial de WSGI com gunicorn e ASGI com uvicorn e comparar velocidades
-* Inserir um notebook com o uso da ORM tortoise para banco de dados async
+* Fazer notebook simulando o uso de gcp pubsub com queue e cloud storage com aiofiles (usar o protect e o assessment-maestro como exemplo)
+* Revisitar estrutua de dados e padrões de projeto
 
 ***
 #### O que é o notebook jupyter
