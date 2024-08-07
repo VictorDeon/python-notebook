@@ -24,4 +24,7 @@ SQLAlchemy~=2.0
 alembic==1.13.1
 # Criptografia
 rsa==4.9
-cryptography
+cryptography==36.0.2
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==3.2.0
