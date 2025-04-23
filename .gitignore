@@ -46,3 +46,4 @@ nltk_data
 notebook
 .ignore
 venv
+service_account.json

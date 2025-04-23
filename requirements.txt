@@ -28,3 +28,5 @@ cryptography==36.0.2
 python-jose==3.3.0
 passlib==1.7.4
 bcrypt==3.2.0
+# GCP
+google-cloud-pubsub==2.29.0
