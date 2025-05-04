@@ -1,5 +1,5 @@
 # Jupyter lab
-jupyterlab==3.6.3
+jupyterlab==3.6.7
 # Outras
 pydantic==1.10.7
 # Requests
