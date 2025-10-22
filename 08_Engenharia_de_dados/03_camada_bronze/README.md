@@ -43,12 +43,15 @@ Vamos construir o **datalake** com uma arquitetura **Medallion**.
 
 * **Landing Zone**: Onde os dados são armazenados de forma bruta, sem processamento adicional.
 
-* **Bronze**: Onde os dados são pré-processados para a limpeza, deduplicação e desnormalização
+* **Bronze**: Onde os dados são pré-processados para a limpeza, deduplicação e desnormalização e inserção no formato **.parquet**
 
 * **Silver**: Onde os dados são enriquecidos, agregados e transformados em uma forma mais legível para relatórios e análises.
 
 * **Gold**: Onde os dados são armazenados para análises em larga escala e geração de valor para a empresa.
 
+### Estrutura lógica do Delta Lakehouse
 
+![Delta Lakehouse](assets/delta-lakehouse.png)
 
+**OBS**: Podemos também fazer a divisão em fato e dimensão na camada Silver e deixar a camada Gold somente para tabelas refinadas para o cliente final.
 
