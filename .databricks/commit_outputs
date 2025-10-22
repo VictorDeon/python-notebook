@@ -1,7 +1,7 @@
 # Examples can be found here: https://docs.databricks.com/repos/repos-setup.html#patterns-for-a-repo-config-file
 
 # Incluir todos os notebooks do repositorio.
-# **
+**
  
 # Inclui o output apenas dos arquivos de tutoriais
 01_Basico/**
