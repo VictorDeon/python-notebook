@@ -30,3 +30,5 @@ passlib==1.7.4
 bcrypt==3.2.0
 # GCP
 google-cloud-pubsub==2.29.0
+# Engenharia de Dados
+matplotlib==3.10.7
