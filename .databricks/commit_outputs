@@ -1,0 +1,13 @@
+# Examples can be found here: https://docs.databricks.com/repos/repos-setup.html#patterns-for-a-repo-config-file
+
+# Incluir todos os notebooks do repositorio.
+# **
+ 
+# Inclui o output apenas dos arquivos de tutoriais
+01_Basico/**
+02_Avancado/**
+03_Orientacao_a_Objeto/**
+04_Estrutura_de_dados/**
+05_Padroes_de_Projeto/**
+06_Banco_de_Dados/**
+07_Nuvem/**
