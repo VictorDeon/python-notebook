@@ -26,4 +26,4 @@ packages:
 	# Copiar os pacotes do docker para o localhost
 	# Vai no settings.json do vscode e insere:
 	# python.analysis.extraPaths": [".ignore/site-packages"]
-	sudo docker cp notebook:/usr/local/lib/python3.9/site-packages .ignore
+	sudo docker cp notebook:/opt/conda/lib/python3.11/site-packages .ignore
